@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap');
+        body {
+            font-family: 'Gentium Basic', serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+      .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.19);
+        }
+      .header {
+            background-color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+        }
+      .header h1 {
+            font-size: 36px;
+            margin-top: 0;
+            font-family: 'Gentium Basic', serif;
+            color: #000; /* black text */
+            text-shadow:
+                0 0 4px #fff,
+                0 0 10px #fff,
+                0 0 18px #fff,
+                0 0 38px #f09,
+                0 0 73px #f09,
+                0 0 80px #f09,
+                0 0 94px #f09,
+                0 0 140px #f09;
+            animation: flicker 1.5s infinite alternate;
+        }
+        @keyframes flicker {
+            0%, 18%, 22%, 25%, 53%, 57%, 100% {
+                text-shadow:
+                    0 0 4px #fff,
+                    0 0 11px #fff,
+                    0 0 19px #fff,
+                    0 0 40px #0fa,
+                    0 0 80px #0fa,
+                    0 0 90px #0fa,
+                    0 0 100px #0fa,
+                    0 0 150px #0fa;
+            }
+            20%, 24%, 55% {
+                text-shadow: none;
+            }
+        }
+        p {
+            margin: 10px 20px;
+            padding: 10px 0;
+            line-height: 1.6;
+            font-size: 20px;
+            color: #333;
+            font-family: 'Gentium Basic', serif;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px auto;
+            width: 80%;
+            text-align: center;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px #ccc;
+        }
+        li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 1px solid #333;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+            background-color: #f7f7f7;
+        }
+        a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+        li span {
+            display: none;
+        }
+
+    li:hover span {
+        display: inline;
+        font-size: 14px;
+        color: #fff;
+        margin-left: 5px;   
+        }
